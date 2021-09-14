@@ -8,4 +8,4 @@ def steps(number):
         steps = steps + 1
     return(steps)
 
-print(steps(9))
+# print(steps(9))
