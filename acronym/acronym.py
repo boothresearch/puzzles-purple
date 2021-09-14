@@ -1,2 +1,5 @@
 def abbreviate(words):
-    pass
+    acronym = ''
+    for i in words.replace('-',' ').split():
+        acronym = acronym + i.replace('_', '')[0].upper()
+    return acronym
