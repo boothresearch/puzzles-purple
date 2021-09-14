@@ -1,6 +1,11 @@
 def find_anagrams(word, candidates):
-    for letter in word:
-        candidate[0].search(letter)
+    letters = set(word)
+    print(letters)
+    print(type(letters))
+    for letter in letters:
+        for candidate in candidates:
+            if letter in candidate:
+                print(candidate)
     return(candidates[0])
 
 
